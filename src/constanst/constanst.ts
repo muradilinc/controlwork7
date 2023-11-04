@@ -1,34 +1,51 @@
 import hamburgerImg from '../assets/the-ultimate-hamburger.webp';
+import cheeseBurgerImg from '../assets/Header_Cheeseburger_832x472_1-3-product-tile-desktop.jpeg';
+import friesImg from '../assets/French fries 2.webp';
+import coffeeImg from '../assets/Coffee.jpg';
+import teaImg from '../assets/BC_2B-_2BAssam_2B_28cup_29_2B_281055_29.webp';
+import colaImg from '../assets/cola.avif';
 
 export const ITEMS: Items[] = [
   {
+    id: 1,
+    count: 1,
     name: "Hamburger",
     price: 80,
-    image: hamburgerImg
+    image: hamburgerImg,
   },
   {
-    name: "hamburger",
-    price: 80,
-    image: hamburgerImg
+    id: 2,
+    count: 1,
+    name: "Cheeseburger",
+    price: 90,
+    image: cheeseBurgerImg
   },
   {
-    name: "hamburger",
+    id: 3,
+    count: 1,
+    name: "Fries",
     price: 80,
-    image: hamburgerImg
+    image: friesImg
   },
   {
-    name: "hamburger",
+    id: 4,
+    count: 1,
+    name: "Coffee",
     price: 80,
-    image: hamburgerImg
+    image: coffeeImg
   },
   {
-    name: "hamburger",
+    id: 5,
+    count: 1,
+    name: "Tea",
     price: 80,
-    image: hamburgerImg
+    image: teaImg
   },
   {
-    name: "hamburger",
+    id: 6,
+    count: 1,
+    name: "Cola",
     price: 80,
-    image: hamburgerImg
+    image: colaImg
   }
 ];
