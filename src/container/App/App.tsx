@@ -56,7 +56,7 @@ const App = () => {
 
 
   return (
-    <div>
+    <>
       <Header/>
       <div className="container mx-auto mt-4">
         <div className="grid grid-cols-3 gap-x-2">
@@ -64,7 +64,7 @@ const App = () => {
           <Items onAdd={addOrder}/>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

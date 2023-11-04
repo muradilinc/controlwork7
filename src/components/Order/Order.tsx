@@ -18,7 +18,7 @@ const Order: React.FC<Props> = ({setOrder, onDelete, total}) => {
       {
         setOrder ?
           setOrder.map(order => {
-            return <OrderItem order={order} onDelete={onDelete}/>;
+            return <OrderItem key={order.id} order={order} onDelete={onDelete}/>;
           })
           :
           null
