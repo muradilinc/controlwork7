@@ -51,12 +51,16 @@ const App = () => {
     });
   };
 
+  const totalPrice = order.reduce((acc, item) => {
+    return acc + (item.price * item.count);
+  }, 0);
+
   return (
     <div>
       <Header/>
       <div className="container mx-auto mt-4">
-        <div className="grid grid-cols-3">
-          <Order setOrder={order} onDelete={deleteOrder}/>
+        <div className="grid grid-cols-3 gap-x-2">
+          <Order setOrder={order} onDelete={deleteOrder} total={totalPrice}/>
           <Items onAdd={addOrder}/>
         </div>
       </div>

@@ -7,7 +7,7 @@ interface Props {
 
 const Items: React.FC<Props> = ({onAdd}) => {
   return (
-    <div className="grid grid-cols-2 gap-2 col-span-2">
+    <div className="grid grid-cols-2 gap-2 col-span-2 border border-black p-2">
       {
         ITEMS.map((item , index)=> {
           return (

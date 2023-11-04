@@ -24,28 +24,28 @@ export const ITEMS: Items[] = [
     id: 3,
     count: 1,
     name: "Fries",
-    price: 80,
+    price: 45,
     image: friesImg
   },
   {
     id: 4,
     count: 1,
     name: "Coffee",
-    price: 80,
+    price: 70,
     image: coffeeImg
   },
   {
     id: 5,
     count: 1,
     name: "Tea",
-    price: 80,
+    price: 50,
     image: teaImg
   },
   {
     id: 6,
     count: 1,
     name: "Cola",
-    price: 80,
+    price: 40,
     image: colaImg
   }
 ];
