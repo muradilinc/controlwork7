@@ -1,5 +1,5 @@
 import React from 'react';
-
+import OrderItem from '../OrderItem/OrderItem.tsx';
 
 interface Props {
   setOrder: Items[];
@@ -18,18 +18,7 @@ const Order: React.FC<Props> = ({setOrder, onDelete, total}) => {
       {
         setOrder ?
           setOrder.map(order => {
-            return(
-              <div key={order.id} className="grid grid-cols-3">
-                <div className="col-span-2">
-                  <p>{order.name}</p>
-                </div>
-                <div className="grid grid-cols-3">
-                  <p>x{order.count}</p>
-                  <p>{order.price}KGS</p>
-                  <button onClick={() => onDelete(order)}>delete</button>
-                </div>
-              </div>
-            );
+            return <OrderItem order={order} onDelete={onDelete}/>;
           })
           :
           null

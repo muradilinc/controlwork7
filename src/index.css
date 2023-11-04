@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.striped-background {
+  width: 100%;
+  background: repeating-linear-gradient(90deg, #005000, #005000 40px, #ff0000 40px, #ff0000 80px, #ffffff 80px, #ffffff 120px);
+}

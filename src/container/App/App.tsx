@@ -22,7 +22,6 @@ const App = () => {
           if (item.id === item.id){
             return acc + 1;
           }
-
           return acc;
         }, 1);
 
@@ -54,6 +53,7 @@ const App = () => {
   const totalPrice = order.reduce((acc, item) => {
     return acc + (item.price * item.count);
   }, 0);
+
 
   return (
     <div>
