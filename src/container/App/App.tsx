@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import Header from '../../components/Header/Header.tsx';
-import Items from '../../components/Items/Items.tsx';
-import Order from '../../components/Order/Order.tsx';
+import Header from '../../components/Header/Header';
+import Items from '../../components/Items/Items';
+import Order from '../../components/Order/Order';
 
 const App = () => {
   const [order, setOrder] = useState<Items[]>([]);
@@ -10,7 +10,7 @@ const App = () => {
     setOrder(prevState => {
       const updateOrder = prevState.map(order => {
         if (item.id === order.id) {
-          return {...order, count: order.count + 1};
+          return { ...order, count: order.count + 1 };
         }
         return order;
       });
@@ -18,8 +18,8 @@ const App = () => {
       const existOrder = prevState.find(order => order.id === item.id);
 
       if (!existOrder) {
-        const countItem = prevState.reduce((acc, item) => {
-          if (item.id === item.id){
+        const countItem = prevState.reduce((acc, accItem) => {
+          if (item.id === accItem.id) {
             return acc + 1;
           }
           return acc;
@@ -34,6 +34,7 @@ const App = () => {
       return updateOrder;
     });
   };
+
 
   const deleteOrder = (order: Items) => {
     setOrder(prevState => {
